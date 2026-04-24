@@ -1,0 +1,394 @@
+[
+  {
+    "theme_bin": "Economy / business",
+    "term": "job",
+    "count": 14,
+    "source_count": 6,
+    "sources": "part6 (1).pdf; part7.pdf; part8.pdf; part9 (1).pdf; part10.pdf; part11 (1).pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "musician",
+    "count": 11,
+    "source_count": 4,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; International-Musician-1944-07.pdf; part4.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "club",
+    "count": 10,
+    "source_count": 5,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf; part7.pdf; part11 (1).pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "musicians",
+    "count": 10,
+    "source_count": 4,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; International-Musician-1944-07.pdf; part4.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "contract",
+    "count": 9,
+    "source_count": 6,
+    "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part7.pdf; part8.pdf; part9 (1).pdf; part10.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "buffalo",
+    "count": 7,
+    "source_count": 5,
+    "sources": "CMC_1 (1)-2.pdf; part2.pdf; part3.pdf; part4.pdf; part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "union",
+    "count": 7,
+    "source_count": 6,
+    "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part2.pdf; part3.pdf; part5 (1).pdf; part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "local 533",
+    "count": 6,
+    "source_count": 5,
+    "sources": "CMC_1 (1)-2.pdf; part2.pdf; part3.pdf; part5 (1).pdf; part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "memorial auditorium",
+    "count": 6,
+    "source_count": 4,
+    "sources": "part7.pdf; part8.pdf; part10.pdf; part11 (1).pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "auditorium",
+    "count": 6,
+    "source_count": 4,
+    "sources": "part7.pdf; part8.pdf; part10.pdf; part11 (1).pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "jazz",
+    "count": 6,
+    "source_count": 3,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "membership",
+    "count": 5,
+    "source_count": 5,
+    "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part2.pdf; part3.pdf; part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "secretary",
+    "count": 4,
+    "source_count": 4,
+    "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part2.pdf; part5 (1).pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "pittsburgh",
+    "count": 3,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Economy / business",
+    "term": "business",
+    "count": 3,
+    "source_count": 3,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part2.pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "musicians club",
+    "count": 3,
+    "source_count": 3,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "music",
+    "count": 3,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; part9 (1).pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "avenue",
+    "count": 2,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "crossroads",
+    "count": 2,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "district",
+    "count": 2,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "hill district",
+    "count": 2,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "street",
+    "count": 2,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Economy / business",
+    "term": "economic",
+    "count": 2,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "american federation of musicians",
+    "count": 2,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "business agent",
+    "count": 2,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; part2.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "contracts",
+    "count": 2,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "dues",
+    "count": 2,
+    "source_count": 2,
+    "sources": "part3.pdf; part5 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "president",
+    "count": 2,
+    "source_count": 2,
+    "sources": "International-Musician-1944-07.pdf; part5 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "work tax",
+    "count": 2,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "colored musicians club",
+    "count": 2,
+    "source_count": 2,
+    "sources": "CMC_1 (1)-2.pdf; part4.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "ballroom",
+    "count": 2,
+    "source_count": 2,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf; part7.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "center avenue",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "fullerton",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "lower hill",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "michigan street",
+    "count": 1,
+    "source_count": 1,
+    "sources": "CMC_1 (1)-2.pdf"
+  },
+  {
+    "theme_bin": "Corridor / spatial",
+    "term": "wylie avenue",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Economy / business",
+    "term": "bar",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Economy / business",
+    "term": "numbers",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "booking",
+    "count": 1,
+    "source_count": 1,
+    "sources": "CMC_1 (1)-2.pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "integration",
+    "count": 1,
+    "source_count": 1,
+    "sources": "part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "merger",
+    "count": 1,
+    "source_count": 1,
+    "sources": "part6 (1).pdf"
+  },
+  {
+    "theme_bin": "Governance / labor",
+    "term": "segregation",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "crawford grill",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "loendi club",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "new granada",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "pittsburgh courier",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Hub / institution",
+    "term": "savoy ballroom",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "band",
+    "count": 1,
+    "source_count": 1,
+    "sources": "part4.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "jam session",
+    "count": 1,
+    "source_count": 1,
+    "sources": "part4.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "nightlife",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "theater",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Jazz / performance",
+    "term": "venue",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Urban change / displacement",
+    "term": "migration",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Urban change / displacement",
+    "term": "redevelopment",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Urban change / displacement",
+    "term": "segregation",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  },
+  {
+    "theme_bin": "Urban change / displacement",
+    "term": "urban redevelopment",
+    "count": 1,
+    "source_count": 1,
+    "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+  }
+]

@@ -1,0 +1,13 @@
+event_id,source_file,event_date_raw,artist_or_act,place,personnel_count_raw,side_personnel_or_groups,job_length,source_info,contract_date_raw,remarks
+EVT_0001,part7.pdf,1941 September 21,"Hite, Les",Genesee Ballroom,14,"Woodman, Britt",1 night,c&t,08/23/41,gig for Sportsmen Club. 1941 October 28
+EVT_0002,part7.pdf,1941 October 28,"Hawkins, Erskine",Memorial Auditorium,16,,1 night,con,,
+EVT_0003,part8.pdf,1947 July 27,"Jordan, Louis",Memorial Auditorium,7,"Morris, Joe",1 night,c&t,05/15/47,motion picture clause. 1947 July 06
+EVT_0004,part8.pdf,1947 July 06,"Hawkins, Coleman",Memorial Auditorium,5,"Roach, Max Davis, Miles Jones, Hank Boyd, Nelson",1 night,c&t,06/02/47,verify time period.
+EVT_0005,part9 (1).pdf,1952 June 03,Symphony Sid and his All-Star Show,Kleinhans Music Hall,6,"Davis, Miles Johnson, J.J. Sims, Zoot Jackson, Milt Clarke, Kenny",1 night,con,05/02/52,
+EVT_0006,part10.pdf,1954 July 12,"Paulson, Montell A.",Paradise Lounge,?,,2 weeks,con,07/12/54,1954 July
+EVT_0007,part10.pdf,1954 July,"Smith, Hattie",Copa Casino,4,"Four Jewels, The",1 week,con,06/22/54,1954 July 16
+EVT_0008,part10.pdf,1954 July 16,"Williams, Paul",Memorial Auditorium,6,"Turner, Joe Brown, Ruth",1 night,con,,
+EVT_0009,part11 (1).pdf,1963 February 23,"Basie, Count",B.A.C.,?,,1 night,min,,1963 February 24
+EVT_0010,part11 (1).pdf,1963 February 24,"Basie, Count",Memorial Auditorium,?,,1 night,min,,1964 May 19
+EVT_0011,part11 (1).pdf,1964 May 19,"Brown, James",Memorial Auditorium,11,,1 night,min,,1964 May 23
+EVT_0012,part11 (1).pdf,1964 May 23,"Hamilton, Chico",Castle Supper Club,4,,1 week,min,,

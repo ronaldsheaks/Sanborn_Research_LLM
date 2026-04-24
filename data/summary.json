@@ -1,0 +1,295 @@
+{
+  "source_count": 13,
+  "event_rows_extracted": 12,
+  "candidate_target_count": 20,
+  "keyword_rows": 56,
+  "top_candidates": [
+    {
+      "candidate_name": "Colored Musicians Club",
+      "city": "Buffalo",
+      "candidate_type": "institution / union",
+      "mention_or_event_count": 9,
+      "unique_artist_count": "",
+      "source_count": 6,
+      "score": 36,
+      "suggested_classification": "Tier I hub/corridor candidate",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "CMC_1 (1)-2.pdf; part2.pdf; part3.pdf; part4.pdf; part5 (1).pdf; part6 (1).pdf"
+    },
+    {
+      "candidate_name": "Memorial Auditorium",
+      "city": "Buffalo",
+      "candidate_type": "venue / event site",
+      "mention_or_event_count": 6,
+      "unique_artist_count": 6,
+      "source_count": 4,
+      "score": 31.0,
+      "suggested_classification": "Tier II node candidate",
+      "evidence_basis": "Extracted from performance contract/event listing preview",
+      "sources": "part10.pdf; part11 (1).pdf; part7.pdf; part8.pdf"
+    },
+    {
+      "candidate_name": "Musicians Club",
+      "city": "Pittsburgh",
+      "candidate_type": "institution / club",
+      "mention_or_event_count": 3,
+      "unique_artist_count": "",
+      "source_count": 3,
+      "score": 15,
+      "suggested_classification": "Tier II node/corridor candidate",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf"
+    },
+    {
+      "candidate_name": "Wylie Avenue",
+      "city": "Pittsburgh",
+      "candidate_type": "corridor / street",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "Fullerton Street",
+      "city": "Pittsburgh",
+      "candidate_type": "corridor / street",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "New Granada Theater",
+      "city": "Pittsburgh",
+      "candidate_type": "venue / theater",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "Loendi Club",
+      "city": "Pittsburgh",
+      "candidate_type": "social club",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "Hurricane Bar",
+      "city": "Pittsburgh",
+      "candidate_type": "venue / club",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "Bambola Social Club",
+      "city": "Pittsburgh",
+      "candidate_type": "venue / club",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "Pittsburgh Courier",
+      "city": "Pittsburgh",
+      "candidate_type": "newspaper / archive source",
+      "mention_or_event_count": 2,
+      "unique_artist_count": "",
+      "source_count": 1,
+      "score": 7,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Curated phrase counted across corpus preview",
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "candidate_name": "Genesee Ballroom",
+      "city": "Buffalo",
+      "candidate_type": "venue / event site",
+      "mention_or_event_count": 1,
+      "unique_artist_count": 1,
+      "source_count": 1,
+      "score": 5.5,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Extracted from performance contract/event listing preview",
+      "sources": "part7.pdf"
+    },
+    {
+      "candidate_name": "Kleinhans Music Hall",
+      "city": "Buffalo",
+      "candidate_type": "venue / event site",
+      "mention_or_event_count": 1,
+      "unique_artist_count": 1,
+      "source_count": 1,
+      "score": 5.5,
+      "suggested_classification": "Lead / needs verification",
+      "evidence_basis": "Extracted from performance contract/event listing preview",
+      "sources": "part9 (1).pdf"
+    }
+  ],
+  "top_keywords": [
+    {
+      "theme_bin": "Economy / business",
+      "term": "job",
+      "count": 14,
+      "source_count": 6,
+      "sources": "part6 (1).pdf; part7.pdf; part8.pdf; part9 (1).pdf; part10.pdf; part11 (1).pdf"
+    },
+    {
+      "theme_bin": "Jazz / performance",
+      "term": "musician",
+      "count": 11,
+      "source_count": 4,
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; International-Musician-1944-07.pdf; part4.pdf"
+    },
+    {
+      "theme_bin": "Jazz / performance",
+      "term": "club",
+      "count": 10,
+      "source_count": 5,
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf; part7.pdf; part11 (1).pdf"
+    },
+    {
+      "theme_bin": "Jazz / performance",
+      "term": "musicians",
+      "count": 10,
+      "source_count": 4,
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; International-Musician-1944-07.pdf; part4.pdf"
+    },
+    {
+      "theme_bin": "Governance / labor",
+      "term": "contract",
+      "count": 9,
+      "source_count": 6,
+      "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part7.pdf; part8.pdf; part9 (1).pdf; part10.pdf"
+    },
+    {
+      "theme_bin": "Corridor / spatial",
+      "term": "buffalo",
+      "count": 7,
+      "source_count": 5,
+      "sources": "CMC_1 (1)-2.pdf; part2.pdf; part3.pdf; part4.pdf; part6 (1).pdf"
+    },
+    {
+      "theme_bin": "Governance / labor",
+      "term": "union",
+      "count": 7,
+      "source_count": 6,
+      "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part2.pdf; part3.pdf; part5 (1).pdf; part6 (1).pdf"
+    },
+    {
+      "theme_bin": "Governance / labor",
+      "term": "local 533",
+      "count": 6,
+      "source_count": 5,
+      "sources": "CMC_1 (1)-2.pdf; part2.pdf; part3.pdf; part5 (1).pdf; part6 (1).pdf"
+    },
+    {
+      "theme_bin": "Hub / institution",
+      "term": "memorial auditorium",
+      "count": 6,
+      "source_count": 4,
+      "sources": "part7.pdf; part8.pdf; part10.pdf; part11 (1).pdf"
+    },
+    {
+      "theme_bin": "Jazz / performance",
+      "term": "auditorium",
+      "count": 6,
+      "source_count": 4,
+      "sources": "part7.pdf; part8.pdf; part10.pdf; part11 (1).pdf"
+    },
+    {
+      "theme_bin": "Jazz / performance",
+      "term": "jazz",
+      "count": 6,
+      "source_count": 3,
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf"
+    },
+    {
+      "theme_bin": "Governance / labor",
+      "term": "membership",
+      "count": 5,
+      "source_count": 5,
+      "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part2.pdf; part3.pdf; part6 (1).pdf"
+    },
+    {
+      "theme_bin": "Governance / labor",
+      "term": "secretary",
+      "count": 4,
+      "source_count": 4,
+      "sources": "CMC_1 (1)-2.pdf; International-Musician-1944-07.pdf; part2.pdf; part5 (1).pdf"
+    },
+    {
+      "theme_bin": "Corridor / spatial",
+      "term": "pittsburgh",
+      "count": 3,
+      "source_count": 1,
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "theme_bin": "Economy / business",
+      "term": "business",
+      "count": 3,
+      "source_count": 3,
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part2.pdf"
+    },
+    {
+      "theme_bin": "Hub / institution",
+      "term": "musicians club",
+      "count": 3,
+      "source_count": 3,
+      "sources": "CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf"
+    },
+    {
+      "theme_bin": "Jazz / performance",
+      "term": "music",
+      "count": 3,
+      "source_count": 2,
+      "sources": "CMC_1 (1)-2.pdf; part9 (1).pdf"
+    },
+    {
+      "theme_bin": "Corridor / spatial",
+      "term": "avenue",
+      "count": 2,
+      "source_count": 1,
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "theme_bin": "Corridor / spatial",
+      "term": "crossroads",
+      "count": 2,
+      "source_count": 1,
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    },
+    {
+      "theme_bin": "Corridor / spatial",
+      "term": "district",
+      "count": 2,
+      "source_count": 1,
+      "sources": "Dissertation_2011_The_Crossroads_of_the.pdf"
+    }
+  ],
+  "generated_note": "Phase 0 POC generated from corpus previews/sample text. Counts are deterministic leads for review, not final historical claims."
+}

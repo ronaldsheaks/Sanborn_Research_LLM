@@ -1,0 +1,21 @@
+candidate_name,city,candidate_type,mention_or_event_count,unique_artist_count,source_count,score,suggested_classification,evidence_basis,sources
+Colored Musicians Club,Buffalo,institution / union,9,,6,36,Tier I hub/corridor candidate,Curated phrase counted across corpus preview,CMC_1 (1)-2.pdf; part2.pdf; part3.pdf; part4.pdf; part5 (1).pdf; part6 (1).pdf
+Memorial Auditorium,Buffalo,venue / event site,6,6,4,31.0,Tier II node candidate,Extracted from performance contract/event listing preview,part10.pdf; part11 (1).pdf; part7.pdf; part8.pdf
+Musicians Club,Pittsburgh,institution / club,3,,3,15,Tier II node/corridor candidate,Curated phrase counted across corpus preview,CMC_1 (1)-2.pdf; Dissertation_2011_The_Crossroads_of_the.pdf; part4.pdf
+Wylie Avenue,Pittsburgh,corridor / street,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Fullerton Street,Pittsburgh,corridor / street,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+New Granada Theater,Pittsburgh,venue / theater,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Loendi Club,Pittsburgh,social club,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Hurricane Bar,Pittsburgh,venue / club,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Bambola Social Club,Pittsburgh,venue / club,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Pittsburgh Courier,Pittsburgh,newspaper / archive source,2,,1,7,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Genesee Ballroom,Buffalo,venue / event site,1,1,1,5.5,Lead / needs verification,Extracted from performance contract/event listing preview,part7.pdf
+Kleinhans Music Hall,Buffalo,venue / event site,1,1,1,5.5,Lead / needs verification,Extracted from performance contract/event listing preview,part9 (1).pdf
+Paradise Lounge,Buffalo,venue / event site,1,1,1,5.5,Lead / needs verification,Extracted from performance contract/event listing preview,part10.pdf
+Copa Casino,Buffalo,venue / event site,1,1,1,5.5,Lead / needs verification,Extracted from performance contract/event listing preview,part10.pdf
+B.A.C.,Buffalo,venue / event site,1,1,1,5.5,Lead / needs verification,Extracted from performance contract/event listing preview,part11 (1).pdf
+Castle Supper Club,Buffalo,venue / event site,1,1,1,5.5,Lead / needs verification,Extracted from performance contract/event listing preview,part11 (1).pdf
+Michigan Street,Buffalo,corridor / street,1,,1,5,Lead / needs verification,Curated phrase counted across corpus preview,CMC_1 (1)-2.pdf
+Crawford Grill,Pittsburgh,venue / club,1,,1,5,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Center Avenue,Pittsburgh,corridor / street,1,,1,5,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
+Savoy Ballroom,Pittsburgh,venue / ballroom,1,,1,5,Lead / needs verification,Curated phrase counted across corpus preview,Dissertation_2011_The_Crossroads_of_the.pdf
