@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sanborn Research LLM - Corpus POC</title>
 <style>
-:root{--bg:#020617;--panel:#0f172a;--line:#334155;--muted:#94a3b8;--text:#e5e7eb;--accent:#bfdbfe;--blue:#38bdf8;--green:#86efac;--gold:#fde68a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#172554,#020617 48%,#020617);color:var(--text)}header,main,footer{max-width:1180px;margin:auto;padding:28px 22px}h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:10px 0 12px}p,li{color:var(--muted);line-height:1.55}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:12px;margin:4px 4px 4px 0}.green{color:#dcfce7;background:rgba(34,197,94,.08);border-color:#166534}.gold{color:#fef3c7;background:rgba(245,158,11,.08);border-color:#92400e}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}.card{background:rgba(15,23,42,.84);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:18px;box-shadow:0 20px 50px rgba(0,0,0,.22)}.kpi{font-size:34px;font-weight:800}.label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.note{border-left:4px solid var(--blue);padding-left:14px}.warn{border-left:4px solid var(--gold);padding-left:14px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;background:rgba(2,6,23,.45)}th,td{padding:10px 12px;border-bottom:1px solid rgba(51,65,85,.7);text-align:left;vertical-align:top;font-size:14px}th{background:#0f172a;color:var(--accent);position:sticky;top:0}footer{color:var(--muted)}a{color:#7dd3fc}.small{font-size:13px}.nowrap{white-space:nowrap}</style>
+:root{--bg:#020617;--panel:#0f172a;--line:#334155;--muted:#94a3b8;--text:#e5e7eb;--accent:#bfdbfe;--blue:#38bdf8;--green:#86efac;--gold:#fde68a;--rose:#fecdd3}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#172554,#020617 48%,#020617);color:var(--text)}header,main,footer{max-width:1180px;margin:auto;padding:28px 22px}h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:10px 0 12px}p,li{color:var(--muted);line-height:1.55}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:12px;margin:4px 4px 4px 0}.green{color:#dcfce7;background:rgba(34,197,94,.08);border-color:#166534}.gold{color:#fef3c7;background:rgba(245,158,11,.08);border-color:#92400e}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}.card{background:rgba(15,23,42,.84);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:18px;box-shadow:0 20px 50px rgba(0,0,0,.22)}.widget{background:linear-gradient(180deg,rgba(30,41,59,.92),rgba(15,23,42,.88));border:1px solid rgba(125,211,252,.35)}.kpi{font-size:34px;font-weight:800}.label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.note{border-left:4px solid var(--blue);padding-left:14px}.warn{border-left:4px solid var(--gold);padding-left:14px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;background:rgba(2,6,23,.45)}th,td{padding:10px 12px;border-bottom:1px solid rgba(51,65,85,.7);text-align:left;vertical-align:top;font-size:14px}th{background:#0f172a;color:var(--accent);position:sticky;top:0}footer{color:var(--muted)}a{color:#7dd3fc}.small{font-size:13px}.nowrap{white-space:nowrap}.bar{height:10px;border-radius:999px;background:rgba(148,163,184,.2);overflow:hidden;min-width:110px}.bar span{display:block;height:100%;background:linear-gradient(90deg,#38bdf8,#86efac)}.count{font-weight:800;font-size:18px;color:#f8fafc}.subtle{color:#cbd5e1}.mini{font-size:12px;color:var(--muted)}
+</style>
 </head>
 <body>
 <header>
-<span class="pill">Phase 0 Work Sample</span><span class="pill">Phase 2 Corpus Support</span><span class="pill green">Updated 04/28/2026</span><span class="pill gold">Buffalo Newspaper Batch Added</span>
+<span class="pill">Phase 0 Work Sample</span><span class="pill">Phase 2 Corpus Support</span><span class="pill green">Updated 04/30/2026</span><span class="pill gold">Entity Count Widgets Added</span>
 <h1>Sanborn Research LLM Corpus Proof of Concept</h1>
 <p class="note">Archival corpus PDFs/images → structured source metadata → deterministic counts/entity extraction → LLM-assisted thematic bins → candidate hubs/corridors → human verification → GIS/story map layer.</p>
 <p>This prototype stages the workflow for turning Buffalo, Pittsburgh, and possible intercity corridor evidence into structured research leads. It does not replace archival verification; it organizes and scores evidence so the team can review stronger leads faster.</p>
@@ -20,6 +21,10 @@
 <div class="card"><div class="label">New Buffalo batch</div><div class="kpi">11</div><p>Club Moonglow, Little Harlem, fire-code probe, labor evidence, Whitie Schmidt, and AFM Local 533 material.</p></div>
 <div class="card"><div class="label">Core theme families</div><div class="kpi">12</div><p>Labor, venues, institutions, corridors, regulation, ownership, protest, segregation, preservation, displacement, performance, intercity networks.</p></div>
 <div class="card"><div class="label">Phase 2 use</div><div class="kpi">15</div><p>Evidence support for selecting and verifying Buffalo's eventual 15-node layer.</p></div>
+</section>
+<section class="two">
+<div class="card widget"><h2>Entity / name mention widget</h2><p class="small">Staged corpus hit counts across source metadata, event rows, ads, article notes, and prior corpus previews. These are working counts for review, not final OCR-normalized totals.</p><div class="table-wrap"><table id="entityCounts"></table></div></div>
+<div class="card widget"><h2>Institution type count widget</h2><p class="small">Current count of distinct candidate institutions/venues visible in the staged corpus. This helps the team see what categories are emerging before final 15-node selection.</p><div class="table-wrap"><table id="institutionCounts"></table></div></div>
 </section>
 <section class="card"><h2>04/28/2026 Buffalo corpus additions</h2><p class="warn">The uploaded archive was converted into structured source metadata for the app. Raw newspaper images/PDFs are not embedded here; this public-facing app uses summary-level research metadata and evidence notes for verification.</p><div class="table-wrap"><table><tr><th>ID</th><th>Date</th><th>Source</th><th>Nodes / entities</th><th>Locations</th><th>Model use</th></tr>
 <tr><td>SRC_017</td><td class="nowrap">1941-11-06</td><td>Buffalo nightclub listings</td><td>Club Moonglow; McVan's; Federal Gardens; Club Merry-Land; Schmidt's; Clark's; Kaufman's; Brogan's; Deckhands; Salemi's Rainbow Club; Eddie Ryan's; Glen Winter Garden Casino; Paulin's; Cafe Aloha; Egbert's Royal Arms</td><td>Buffalo; Club Moonglow</td><td>Supports venue recurrence, nightlife ecosystem mapping, performer/revue tracking, and Buffalo source expansion.</td></tr>
@@ -99,5 +104,34 @@
 </table></div></section>
 </main>
 <footer>Sanborn Research LLM Corpus POC · Phase 0 technical prototype with Phase 2 corpus support · Python/counts first, LLM interpretation second, human verification always.</footer>
+<script>
+const entityCounts=[
+{name:'Club Moonglow',type:'Jazz club / venue',count:8,sources:'SRC_017, 018, 019, 020, 021, 022, 025, 026'},
+{name:'Local 533',type:'Labor / cultural institution',count:7,sources:'SRC_001, 004, 005, 007, 008, 015, 023'},
+{name:'Colored Musicians Club',type:'Cultural institution',count:6,sources:'SRC_001, 004, 006, 014, 015, 016'},
+{name:'Memorial Auditorium',type:'Major venue',count:4,sources:'SRC_010, 013, 016, 025'},
+{name:'Little Harlem',type:'Jazz club / venue',count:2,sources:'SRC_018, 024'},
+{name:'Club Merry-Land',type:'Jazz club / venue',count:2,sources:'SRC_017, 018'},
+{name:'Brogan\'s Grill',type:'Jazz club / venue',count:2,sources:'SRC_017, 018'},
+{name:'Whitie Schmidt\'s / Schmidt\'s',type:'Jazz club / venue',count:2,sources:'SRC_017, 027'},
+{name:'Raymond E. Jackson',type:'Person / labor leader',count:2,sources:'SRC_004, 015'},
+{name:'American Federation of Musicians',type:'Labor institution',count:3,sources:'SRC_003, 015, 023'},
+{name:'145 Broadway',type:'Institutional place',count:2,sources:'SRC_015, 016'},
+{name:'Michigan at William / 460 Michigan',type:'Address / micro-corridor',count:5,sources:'SRC_018, 019, 020, 021, 022'}
+];
+const institutionCounts=[
+{category:'Jazz clubs / nightlife venues',count:21,examples:'Club Moonglow; Little Harlem; Whitie Schmidt\'s; Club Merry-Land; Havana Casino; Brogan\'s; Federal Gardens; McVan\'s; Paradise Lounge; Copa Casino'},
+{category:'Cultural institutions / social infrastructure',count:5,examples:'Colored Musicians Club; Local 533; Local 43; Michigan Avenue Baptist Church; AFM'},
+{category:'Major performance venues / auditoriums',count:4,examples:'Memorial Auditorium; Kleinhans Music Hall; Genesee Ballroom; New Granada Theater'},
+{category:'Corridors / address clusters',count:5,examples:'Michigan Street; Michigan at William; NYC→Buffalo→Pittsburgh; Wylie Avenue; Fullerton Street'},
+{category:'Labor / governance institutions',count:4,examples:'Local 533; Local 43; American Federation of Musicians; International Musician'},
+{category:'Pittsburgh jazz/cultural nodes',count:8,examples:'Crawford Grill; Wylie Avenue; Fullerton Street; New Granada Theater; Loendi Club; Hurricane Bar; Bambola Social Club; Savoy Ballroom'}
+];
+function esc(v){return String(v??'').replace(/[&<>]/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));}
+function makeBar(count,max){const pct=Math.max(4,Math.round((count/max)*100));return `<div class="bar"><span style="width:${pct}%"></span></div>`;}
+function entityTable(){const max=Math.max(...entityCounts.map(r=>r.count));document.getElementById('entityCounts').innerHTML='<tr><th>Name / entity</th><th>Type</th><th>Count</th><th>Signal</th><th>Sources</th></tr>'+entityCounts.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.type)}</td><td><span class="count">${r.count}</span></td><td>${makeBar(r.count,max)}</td><td class="mini">${esc(r.sources)}</td></tr>`).join('');}
+function institutionTable(){const max=Math.max(...institutionCounts.map(r=>r.count));document.getElementById('institutionCounts').innerHTML='<tr><th>Institution group</th><th>Distinct count</th><th>Signal</th><th>Examples</th></tr>'+institutionCounts.map(r=>`<tr><td>${esc(r.category)}</td><td><span class="count">${r.count}</span></td><td>${makeBar(r.count,max)}</td><td class="mini">${esc(r.examples)}</td></tr>`).join('');}
+entityTable();institutionTable();
+</script>
 </body>
 </html>
