@@ -5,28 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sanborn Research LLM - Corpus POC</title>
 <style>
-:root{--bg:#020617;--panel:#0f172a;--line:#334155;--muted:#94a3b8;--text:#e5e7eb;--accent:#bfdbfe;--blue:#38bdf8;--green:#86efac;--gold:#fde68a;--rose:#fecdd3}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#172554,#020617 48%,#020617);color:var(--text)}header,main,footer{max-width:1180px;margin:auto;padding:28px 22px}h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:10px 0 12px}p,li{color:var(--muted);line-height:1.55}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:12px;margin:4px 4px 4px 0}.green{color:#dcfce7;background:rgba(34,197,94,.08);border-color:#166534}.gold{color:#fef3c7;background:rgba(245,158,11,.08);border-color:#92400e}.rose{color:#ffe4e6;background:rgba(244,63,94,.08);border-color:#9f1239}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}.card{background:rgba(15,23,42,.84);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:18px;box-shadow:0 20px 50px rgba(0,0,0,.22)}.widget{background:linear-gradient(180deg,rgba(30,41,59,.92),rgba(15,23,42,.88));border:1px solid rgba(125,211,252,.35)}.kpi{font-size:34px;font-weight:800}.label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.note{border-left:4px solid var(--blue);padding-left:14px}.warn{border-left:4px solid var(--gold);padding-left:14px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;background:rgba(2,6,23,.45)}th,td{padding:10px 12px;border-bottom:1px solid rgba(51,65,85,.7);text-align:left;vertical-align:top;font-size:14px}th{background:#0f172a;color:var(--accent);position:sticky;top:0}footer{color:var(--muted)}a{color:#7dd3fc}.small{font-size:13px}.nowrap{white-space:nowrap}.bar{height:10px;border-radius:999px;background:rgba(148,163,184,.2);overflow:hidden;min-width:110px}.bar span{display:block;height:100%;background:linear-gradient(90deg,#38bdf8,#86efac)}.count{font-weight:800;font-size:18px;color:#f8fafc}.subtle{color:#cbd5e1}.mini{font-size:12px;color:var(--muted)}
+:root{--bg:#020617;--panel:#0f172a;--line:#334155;--muted:#94a3b8;--text:#e5e7eb;--accent:#bfdbfe;--blue:#38bdf8;--green:#86efac;--gold:#fde68a;--rose:#fecdd3}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#172554,#020617 48%,#020617);color:var(--text)}header,main,footer{max-width:1180px;margin:auto;padding:28px 22px}h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:10px 0 12px}p,li{color:var(--muted);line-height:1.55}.pill,.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:12px;margin:4px 4px 4px 0}.green{color:#dcfce7;background:rgba(34,197,94,.08);border-color:#166534}.gold{color:#fef3c7;background:rgba(245,158,11,.08);border-color:#92400e}.rose{color:#ffe4e6;background:rgba(244,63,94,.08);border-color:#9f1239}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}.card{background:rgba(15,23,42,.84);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:18px;box-shadow:0 20px 50px rgba(0,0,0,.22)}.widget{background:linear-gradient(180deg,rgba(30,41,59,.92),rgba(15,23,42,.88));border:1px solid rgba(125,211,252,.35)}.kpi{font-size:34px;font-weight:800}.label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.note{border-left:4px solid var(--blue);padding-left:14px}.warn{border-left:4px solid var(--gold);padding-left:14px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;background:rgba(2,6,23,.45)}th,td{padding:10px 12px;border-bottom:1px solid rgba(51,65,85,.7);text-align:left;vertical-align:top;font-size:14px}th{background:#0f172a;color:var(--accent);position:sticky;top:0}footer{color:var(--muted)}a{color:#7dd3fc}.small{font-size:13px}.nowrap{white-space:nowrap}.count{font-weight:800;font-size:18px;color:#f8fafc}.subtle{color:#cbd5e1}
 </style>
 </head>
 <body>
 <header>
-<span class="pill">Phase 0 Work Sample</span><span class="pill">Phase 2 Corpus Support</span><span class="pill green">Updated 04/30/2026</span><span class="pill gold">Entity Count Widgets Added</span><span class="pill rose">People Widget Added</span>
+<span class="pill">Phase 0 Work Sample</span><span class="pill">Phase 2 Corpus Support</span><span class="pill green">Updated 05/04/2026</span><span class="pill gold">PBS/WQED Source Integrated</span><span class="pill rose">Pittsburgh + Buffalo Corpus</span>
 <h1>Sanborn Research LLM Corpus Proof of Concept</h1>
-<p class="note">Archival corpus PDFs/images → structured source metadata → deterministic counts/entity extraction → LLM-assisted thematic bins → candidate hubs/corridors → human verification → GIS/story map layer.</p>
+<p class="note">Archival corpus PDFs/images/transcripts → structured source metadata → deterministic counts/entity extraction → LLM-assisted thematic bins → candidate hubs/corridors → human verification → GIS/story map layer.</p>
 <p>This prototype stages the workflow for turning Buffalo, Pittsburgh, and possible intercity corridor evidence into structured research leads. It does not replace archival verification; it organizes and scores evidence so the team can review stronger leads faster.</p>
+<p><a href="wylie-avenue-days.html">Open the PBS/WQED Wylie Avenue Days addendum</a> · <a href="data/pbs_wylie_avenue_days_corpus.json">View structured JSON record</a></p>
 </header>
 <main>
 <section class="grid">
-<div class="card"><div class="label">Sources staged</div><div class="kpi">27</div><p>Original corpus, supplemental theory/governance sources, and 11 new Buffalo newspaper / union-journal items.</p></div>
-<div class="card"><div class="label">New Buffalo batch</div><div class="kpi">11</div><p>Club Moonglow, Little Harlem, fire-code probe, labor evidence, Whitie Schmidt, and AFM Local 533 material.</p></div>
-<div class="card"><div class="label">Core theme families</div><div class="kpi">12</div><p>Labor, venues, institutions, corridors, regulation, ownership, protest, segregation, preservation, displacement, performance, intercity networks.</p></div>
-<div class="card"><div class="label">Phase 2 use</div><div class="kpi">15</div><p>Evidence support for selecting and verifying Buffalo's eventual 15-node layer.</p></div>
+<div class="card"><div class="label">Sources staged</div><div class="kpi">28</div><p>Original corpus, supplemental theory/governance sources, 11 Buffalo newspaper / union-journal items, and PBS/WQED <em>Wylie Avenue Days</em>.</p></div>
+<div class="card"><div class="label">New Pittsburgh source</div><div class="kpi">SRC 028</div><p>Transcript-derived source record for Wylie Avenue, Fullerton Street, Hill District institutions, and Lower Hill displacement.</p></div>
+<div class="card"><div class="label">Core theme families</div><div class="kpi">15</div><p>Labor, venues, institutions, corridors, regulation, ownership, protest, segregation, preservation, displacement, performance, media, social infrastructure, migration, and intercity networks.</p></div>
+<div class="card"><div class="label">Phase 2 use</div><div class="kpi">15</div><p>Evidence support for selecting, verifying, and comparing city-level node layers.</p></div>
+</section>
+<section class="card widget">
+<h2>PBS/WQED Pittsburgh corpus addition</h2>
+<p class="warn">The full PBS transcript is not republished here. The public app stores structured metadata, extracted entities, candidate nodes, theme bins, and GIS handoff notes for verification.</p>
+<div class="table-wrap"><table><tr><th>ID</th><th>Source</th><th>City/scope</th><th>Core signals</th><th>Model/GIS use</th></tr>
+<tr><td>SRC_028</td><td><em>Wylie Avenue Days</em>, PBS/WQED documentary transcript-derived corpus record</td><td>Pittsburgh; Hill District; Wylie Avenue; Fullerton Street; Lower Hill</td><td>Goode's Pharmacy; Crawford Grill No. 1 and No. 2; Pittsburgh Courier; Loendi Club; The Frogs; Saint Benedict the Moor; Freedom Corner; Greenlee Field; Civic Arena / Lower Hill displacement</td><td>Strengthens Pittsburgh node selection, social-infrastructure coding, corridor/crossroads analysis, displacement modeling, and oral-history/documentary evidence intake.</td></tr>
+</table></div>
 </section>
 <section class="two">
-<div class="card widget"><h2>Entity / name mention widget</h2><p class="small">Staged corpus hit counts across source metadata, event rows, ads, article notes, and prior corpus previews. These are working counts for review, not final OCR-normalized totals.</p><div class="table-wrap"><table id="entityCounts"></table></div></div>
-<div class="card widget"><h2>Institution type count widget</h2><p class="small">Current count of distinct candidate institutions/venues visible in the staged corpus. This helps the team see what categories are emerging before final 15-node selection.</p><div class="table-wrap"><table id="institutionCounts"></table></div></div>
+<div class="card widget"><h2>Entity / name mention widget</h2><p class="small">Working corpus hit counts across source metadata, event rows, ads, article notes, documentary transcript-derived metadata, and prior corpus previews. These are working counts for review, not final OCR-normalized totals.</p><div class="table-wrap"><table id="entityCounts"></table></div></div>
+<div class="card widget"><h2>Institution type count widget</h2><p class="small">Current count of distinct candidate institutions/venues visible in the staged corpus. This helps the team see what categories are emerging before final node selection.</p><div class="table-wrap"><table id="institutionCounts"></table></div></div>
 </section>
-<section class="card widget"><h2>People mention widget</h2><p class="small">Working list of people named in the staged corpus so far, including one-off mentions. Functions are preliminary role labels for review: musician, performer, bandleader, union leader, venue owner/operator, radio/cultural figure, scholar/source author, or civic/governance actor.</p><div class="table-wrap"><table id="peopleCounts"></table></div></section>
+<section class="card widget"><h2>People mention widget</h2><p class="small">Working list of people named in the staged corpus so far. Functions are preliminary role labels for review: musician, performer, bandleader, union leader, venue owner/operator, radio/cultural figure, scholar/source author, civic/governance actor, business owner, or documentary narrator/interviewee.</p><div class="table-wrap"><table id="peopleCounts"></table></div></section>
 <section class="card"><h2>04/28/2026 Buffalo corpus additions</h2><p class="warn">The uploaded archive was converted into structured source metadata for the app. Raw newspaper images/PDFs are not embedded here; this public-facing app uses summary-level research metadata and evidence notes for verification.</p><div class="table-wrap"><table><tr><th>ID</th><th>Date</th><th>Source</th><th>Nodes / entities</th><th>Locations</th><th>Model use</th></tr>
 <tr><td>SRC_017</td><td class="nowrap">1941-11-06</td><td>Buffalo nightclub listings</td><td>Club Moonglow; McVan's; Federal Gardens; Club Merry-Land; Schmidt's; Clark's; Kaufman's; Brogan's; Deckhands; Salemi's Rainbow Club; Eddie Ryan's; Glen Winter Garden Casino; Paulin's; Cafe Aloha; Egbert's Royal Arms</td><td>Buffalo; Club Moonglow</td><td>Supports venue recurrence, nightlife ecosystem mapping, performer/revue tracking, and Buffalo source expansion.</td></tr>
 <tr><td>SRC_018</td><td class="nowrap">1943-01-07</td><td>Fire-law probe / nightclub summons article</td><td>Little Harlem; Club Merry-Land; Havana Casino; Brogan's Grill; Club Moonglow</td><td>494 Michigan Ave; 349 Broadway; 145 Goodell St; 183 Seneca St; 460 Michigan Ave</td><td>High-value geocoding and governance/regulatory evidence; adds multiple address-ready Buffalo candidate nodes.</td></tr>
@@ -40,58 +48,56 @@
 <tr><td>SRC_026</td><td class="nowrap">1941-10-16</td><td>Club Moonglow Sepian Girl advertisement</td><td>Club Moonglow; Anna Belle; Ted Lewis Jr.; Clara Williams; Inez Carter; Fast Sepian Chorus; Irving Alexander</td><td>Michigan at William</td><td>Adds performer/person-name extraction targets and repeated Moonglow venue evidence.</td></tr>
 <tr><td>SRC_027</td><td class="nowrap">1942-04-10</td><td>Whitie Schmidt's Nite Club Black & White Revue advertisement</td><td>Whitie Schmidt's Nite Club; Black & White Revue performers</td><td>1237 Genesee St</td><td>Adds a geocodable supporting venue candidate outside the Michigan/William Moonglow cluster.</td></tr>
 </table></div></section>
-<section class="card"><h2>Immediate Buffalo 15-node implications</h2><div class="table-wrap"><table><tr><th>Node / cluster</th><th>Evidence signal</th><th>Phase 2 implication</th></tr>
+<section class="card"><h2>Immediate Buffalo and Pittsburgh node implications</h2><div class="table-wrap"><table><tr><th>Node / cluster</th><th>Evidence signal</th><th>Phase 2 implication</th></tr>
 <tr><td>Club Moonglow</td><td>Multiple dated ads/articles from 1941, 1942, 1943, 1946, and 1949; repeated Michigan/William and 460 Michigan location evidence; owner/operator history through Max Levy; performer and labor evidence.</td><td>Strong Buffalo 15-node candidate. Treat as major venue / cultural hub pending final Buffalo schema.</td></tr>
 <tr><td>Little Harlem</td><td>1940 ad identifies Le Roy Smith's Little Harlem at 494 Michigan; 1943 fire-law article provides address/owner context.</td><td>Strong Buffalo 15-node candidate; likely major/supporting venue depending on Jaina's final evidence stack.</td></tr>
 <tr><td>Michigan at William / 460 Michigan</td><td>Repeated address/location signal across Club Moonglow ads and classified/regulatory records.</td><td>Priority geocoding target and possible micro-corridor/cluster anchor.</td></tr>
-<tr><td>Club Merry-Land, Havana Casino, Brogan's Grill</td><td>Fire-law probe provides names, addresses, and owners for additional nightlife nodes.</td><td>Good replacement/review candidates if Buffalo needs additional verified venue nodes.</td></tr>
-<tr><td>Whitie Schmidt's Nite Club</td><td>1942 ad at 1237 Genesee St with named Black & White Revue performers and show schedule.</td><td>Review candidate; useful for comparing Michigan Street cluster against Genesee Street entertainment geography.</td></tr>
+<tr><td>Wylie Avenue / Fullerton Street</td><td>PBS/WQED documentary frames this as a dense Pittsburgh crossroads of Black business, nightlife, media, social infrastructure, churches, and neighborhood memory.</td><td>Strong Pittsburgh corridor/crossroads candidate. Prioritize geocoding and relationship modeling.</td></tr>
+<tr><td>Goode's Pharmacy</td><td>Transcript-derived corpus record identifies it as a 24-hour social hub at/near Fullerton and Wylie.</td><td>Strong social-infrastructure node candidate.</td></tr>
+<tr><td>Crawford Grill No. 1 / No. 2</td><td>Repeated Pittsburgh jazz/nightlife hub signal across existing Hill District corpus and Wylie Avenue Days addendum.</td><td>Strong Pittsburgh jazz hub candidate.</td></tr>
+<tr><td>Pittsburgh Courier</td><td>Documentary supports it as a Black media institution with local and national information-network significance.</td><td>Media/documentation institution layer; useful beyond venue mapping.</td></tr>
+<tr><td>Saint Benedict the Moor / Freedom Corner</td><td>Documentary links church/civic space to urban renewal boundary and community resistance.</td><td>Civic/governance and displacement-boundary node; map with Lower Hill impact zone.</td></tr>
 <tr><td>Local 533 / AFM autonomy</td><td>International Musician July 1944 records Local 533 Buffalo in the context of subsidiary colored locals and autonomy.</td><td>Core institution/governance layer, not just venue layer.</td></tr>
 </table></div></section>
 <section class="card"><h2>Intercity corridor hypothesis</h2><p>Umar added support data for a possible <strong>NYC → Buffalo → Pittsburgh</strong> cultural/music corridor. This remains a working hypothesis. The model should track whether performers, institutions, unions, venues, and source citations show repeated movement or linkage between these cities.</p><div class="table-wrap"><table><tr><th>Component</th><th>Detail</th><th>Model/GIS use</th></tr>
 <tr><td>Hypothesis</td><td>Possible NYC → Buffalo → Pittsburgh cultural/music corridor.</td><td>Track repeated evidence of performer movement, touring routes, institutional relationships, union connections, and recurring venues across cities.</td></tr>
 <tr><td>Buffalo anchors</td><td>Colored Musicians Club, Local 533, Memorial Auditorium, Club Moonglow, Little Harlem.</td><td>Treat as high-value Buffalo nodes for corridor testing and GIS staging.</td></tr>
-<tr><td>New signal</td><td>Club Moonglow ads mention New York/Cotton Club performer associations; Max Levy article mentions Bill “Bojangles” Robinson brought to Buffalo.</td><td>Flag for researcher verification; possible performer-flow evidence rather than route proof by itself.</td></tr>
+<tr><td>Pittsburgh anchors</td><td>Wylie Avenue, Fullerton Street, Crawford Grill, Goode's Pharmacy, Pittsburgh Courier, Loendi Club, Saint Benedict the Moor / Freedom Corner.</td><td>Treat as high-value Pittsburgh nodes for corridor/crossroads and displacement modeling.</td></tr>
 <tr><td>GIS handoff</td><td>Once verified, corridor evidence can become a network layer rather than only individual points.</td><td>Map nodes, routes, and intercity relationships separately from local hub tiers.</td></tr>
 </table></div></section>
 <section class="two">
-<div class="card"><h2>Thematic bins to track</h2><span class="pill">NYC–Buffalo–Pittsburgh corridor</span><span class="pill">Touring networks</span><span class="pill">Protest / Jim Crow</span><span class="pill">Segregation / discrimination</span><span class="pill">Labor / union governance</span><span class="pill">Black musician autonomy</span><span class="pill">Venue regulation / fire code</span><span class="pill">Ownership / management</span><span class="pill">Jam session / social infrastructure</span><span class="pill">Racialized labor market</span><span class="pill">Revue / performance circuit</span><span class="pill">Institutional preservation</span></div>
-<div class="card"><h2>Priority entities added</h2><span class="pill">Club Moonglow</span><span class="pill">Little Harlem</span><span class="pill">Local 533</span><span class="pill">Whitie Schmidt's Nite Club</span><span class="pill">Club Merry-Land</span><span class="pill">Havana Casino</span><span class="pill">Brogan's Grill</span><span class="pill">Max Levy</span><span class="pill">Irving Alexander</span><span class="pill">Heads Adams</span><span class="pill">L. V. Plummer</span><span class="pill">AFM</span><span class="pill">Michigan at William</span><span class="pill">494 Michigan</span><span class="pill">1237 Genesee</span></div>
+<div class="card"><h2>Thematic bins to track</h2><span class="tag">NYC–Buffalo–Pittsburgh corridor</span><span class="tag">Touring networks</span><span class="tag">Great Migration</span><span class="tag">Black commercial corridor</span><span class="tag">Social infrastructure</span><span class="tag">Jazz and nightlife</span><span class="tag">Media/documentation</span><span class="tag">Protest / Jim Crow</span><span class="tag">Segregation / discrimination</span><span class="tag">Labor / union governance</span><span class="tag">Black musician autonomy</span><span class="tag">Urban renewal</span><span class="tag">Displacement</span><span class="tag">Informal economy</span><span class="tag">Institutional preservation</span></div>
+<div class="card"><h2>Priority entities added</h2><span class="tag">Club Moonglow</span><span class="tag">Little Harlem</span><span class="tag">Local 533</span><span class="tag">Wylie Avenue</span><span class="tag">Fullerton Street</span><span class="tag">Goode's Pharmacy</span><span class="tag">Crawford Grill</span><span class="tag">Pittsburgh Courier</span><span class="tag">Loendi Club</span><span class="tag">The Frogs</span><span class="tag">Saint Benedict the Moor</span><span class="tag">Freedom Corner</span><span class="tag">Greenlee Field</span><span class="tag">Civic Arena</span><span class="tag">Lower Hill</span></div>
 </section>
 <section class="card"><h2>Updated model logic</h2><div class="table-wrap"><table><tr><th>Step</th><th>Action</th><th>Output</th></tr>
-<tr><td>1. Corpus staging</td><td>Add PDFs, links, archival descriptions, event listings, corridor notes, newspaper clippings, and source metadata.</td><td>Source inventory with city, topic, date, status, and evidence notes.</td></tr>
-<tr><td>2. Deterministic extraction</td><td>Use Python/text extraction where available; visually structure image-based clippings; count terms/entities; flag unreadable or image-only files for review.</td><td>Keyword counts, entity tables, event rows, source coverage, and verification flags.</td></tr>
-<tr><td>3. Thematic binning</td><td>Use controlled theme dictionaries plus LLM-assisted summaries.</td><td>Labor, regulation, protest, segregation, venue, corridor, institution, preservation, displacement, performance, and intercity-network bins.</td></tr>
-<tr><td>4. Node/corridor scoring</td><td>Score by recurrence, source count, evidence strength, named performers/orgs, address readiness, and map readiness.</td><td>Tier I hub, Tier II node, supporting venue, local corridor, or intercity corridor lead.</td></tr>
+<tr><td>1. Corpus staging</td><td>Add PDFs, links, archival descriptions, documentary transcript pages, event listings, corridor notes, newspaper clippings, and source metadata.</td><td>Source inventory with city, topic, date, status, and evidence notes.</td></tr>
+<tr><td>2. Deterministic extraction</td><td>Use Python/text extraction where available; visually structure image-based clippings; count terms/entities; flag unreadable, image-only, or copyrighted full-transcript sources for review-safe metadata handling.</td><td>Keyword counts, entity tables, event rows, source coverage, and verification flags.</td></tr>
+<tr><td>3. Thematic binning</td><td>Use controlled theme dictionaries plus LLM-assisted summaries.</td><td>Labor, regulation, protest, segregation, venue, corridor, institution, preservation, displacement, performance, media, social infrastructure, and intercity-network bins.</td></tr>
+<tr><td>4. Node/corridor scoring</td><td>Score by recurrence, source count, evidence strength, named performers/orgs, address readiness, social-infrastructure role, displacement relevance, and map readiness.</td><td>Tier I hub, Tier II node, supporting venue, local corridor, displacement zone, or intercity corridor lead.</td></tr>
 <tr><td>5. Human verification</td><td>Researchers verify address, dates, source excerpt, city links, and confidence.</td><td>GIS-ready node and corridor table.</td></tr>
-<tr><td>6. Spatial handoff</td><td>Export verified nodes/routes to GeoJSON/QGIS/Leaflet/story map layers.</td><td>Mapped cultural hubs, corridors, and evidence-backed spatial/network analysis.</td></tr>
+<tr><td>6. Spatial handoff</td><td>Export verified nodes/routes/zones to GeoJSON/QGIS/Leaflet/story map layers.</td><td>Mapped cultural hubs, corridors, displacement zones, and evidence-backed spatial/network analysis.</td></tr>
 </table></div></section>
-<section class="card"><h2>Shared-sheet intake schema</h2><div class="table-wrap"><table><tr><th>Field</th><th>Purpose</th></tr>
-<tr><td>Node ID / Corridor ID</td><td>Stable unique identifier for each place, institution, or route hypothesis.</td></tr>
-<tr><td>City / cities linked</td><td>Buffalo, Pittsburgh, NYC, or intercity connection.</td></tr>
-<tr><td>Node name / alternate names</td><td>Supports historical naming variation and fuzzy matching.</td></tr>
-<tr><td>Node type / category</td><td>Core institution, major venue, supporting venue, corridor, source node, route link.</td></tr>
-<tr><td>Address/location</td><td>Required for geocoding and GIS handoff.</td></tr>
-<tr><td>Time period</td><td>Anchors the node or corridor historically.</td></tr>
-<tr><td>Source link/citation</td><td>Prevents LLM claims from floating without evidence.</td></tr>
-<tr><td>Evidence excerpt / note</td><td>Human-readable support for why the node/corridor matters.</td></tr>
-<tr><td>Named performers/organizations</td><td>Feeds network, recurrence, and intercity movement analysis.</td></tr>
-<tr><td>Theme bins</td><td>Labor, regulation, protest, segregation, venue, corridor, preservation, displacement, intercity network.</td></tr>
-<tr><td>Recurrence count</td><td>Number of corpus mentions/events.</td></tr>
-<tr><td>Evidence/confidence score</td><td>Supports Strong / Review / Replace classification.</td></tr>
-<tr><td>Verification status</td><td>Unverified, needs review, verified, mapped.</td></tr>
+<section class="card"><h2>Shared-sheet intake schema additions</h2><div class="table-wrap"><table><tr><th>Field</th><th>Purpose</th></tr>
+<tr><td>media_transcript_source</td><td>Flags transcript-derived documentary or broadcast sources.</td></tr>
+<tr><td>oral_history_indicator</td><td>Marks sources/nodes supported by interview, memory, documentary narration, or community testimony.</td></tr>
+<tr><td>documentary_source_indicator</td><td>Separates documentary evidence from maps, directories, newspapers, and archival PDFs.</td></tr>
+<tr><td>social_infrastructure_type</td><td>Codes pharmacies, barbershops, salons, churches, clubs, newspapers, restaurants, and other everyday support nodes.</td></tr>
+<tr><td>urban_renewal_displacement_indicator</td><td>Flags nodes or zones tied to redevelopment, Civic Arena construction, demolition, or lower Hill displacement.</td></tr>
+<tr><td>parallel_institution_indicator</td><td>Captures institutions created or strengthened because segregation restricted access elsewhere.</td></tr>
+<tr><td>media_documentation_indicator</td><td>Flags newspapers, photographers, radio, and documentary sources that preserve or distribute information.</td></tr>
+<tr><td>corridor_crossroads_indicator</td><td>Marks Wylie/Fullerton, Michigan/William, or other spatial intersections functioning as cultural crossroads.</td></tr>
 </table></div></section>
 <section class="card"><h2>Top candidate hubs / corridors from current POC</h2><div class="table-wrap"><table><tr><th>Candidate</th><th>City</th><th>Type</th><th>Evidence signal</th><th>Classification</th></tr>
 <tr><td>Club Moonglow</td><td>Buffalo</td><td>Venue / cultural hub</td><td>Multiple ads, labor classified, fire-code record, ownership obituary; repeated Michigan/William and 460 Michigan evidence.</td><td>Strong Buffalo 15-node candidate</td></tr>
 <tr><td>Little Harlem</td><td>Buffalo</td><td>Venue / entertainment club</td><td>494 Michigan ad plus fire-code article; all-colored entertainment club language.</td><td>Strong Buffalo 15-node candidate</td></tr>
 <tr><td>Colored Musicians Club</td><td>Buffalo</td><td>Institution / union-adjacent hub</td><td>Local 533, jam sessions, 145 Broadway, institutional preservation.</td><td>Tier I hub</td></tr>
 <tr><td>Local 533</td><td>Buffalo</td><td>Labor/governance institution</td><td>Black musician autonomy, AFM segregation, governance records, International Musician evidence.</td><td>Tier I institution</td></tr>
-<tr><td>Whitie Schmidt's Nite Club</td><td>Buffalo</td><td>Supporting venue</td><td>1237 Genesee St ad; Black & White Revue; performers and show schedule.</td><td>Review candidate</td></tr>
-<tr><td>Club Merry-Land / Havana Casino / Brogan's Grill</td><td>Buffalo</td><td>Supporting venues</td><td>Fire-law article provides names, addresses, and owner details.</td><td>Review candidates</td></tr>
-<tr><td>NYC → Buffalo → Pittsburgh</td><td>Intercity</td><td>Corridor hypothesis</td><td>Possible performer/institution/touring relationship needing source verification.</td><td>Corridor lead</td></tr>
-<tr><td>Michigan Street / Broadway area</td><td>Buffalo</td><td>Corridor / cluster</td><td>Club Moonglow, Little Harlem, Club Merry-Land, and related venue geography.</td><td>Corridor lead</td></tr>
+<tr><td>Wylie Avenue / Fullerton Street</td><td>Pittsburgh</td><td>Corridor / crossroads</td><td>PBS/WQED documentary and Hill District corpus identify dense Black business, jazz, media, church, and social-infrastructure geography.</td><td>Strong Pittsburgh corridor candidate</td></tr>
+<tr><td>Goode's Pharmacy</td><td>Pittsburgh</td><td>Social infrastructure / pharmacy</td><td>Documentary-derived 24-hour social hub at Fullerton/Wylie.</td><td>Strong node candidate</td></tr>
 <tr><td>Crawford Grill</td><td>Pittsburgh</td><td>Venue / cultural hub</td><td>Pittsburgh jazz ecosystem anchor.</td><td>Tier I/Tier II candidate</td></tr>
-<tr><td>New Granada Theater</td><td>Pittsburgh</td><td>Venue / theater</td><td>Hill District performance/cultural site.</td><td>Tier II candidate</td></tr>
+<tr><td>Pittsburgh Courier</td><td>Pittsburgh</td><td>Newspaper / media institution</td><td>National Black newspaper and local institutional anchor.</td><td>Media/information node</td></tr>
+<tr><td>Saint Benedict the Moor / Freedom Corner</td><td>Pittsburgh</td><td>Church / civic-governance node</td><td>Community boundary and resistance signal around urban renewal.</td><td>Civic/displacement node</td></tr>
+<tr><td>NYC → Buffalo → Pittsburgh</td><td>Intercity</td><td>Corridor hypothesis</td><td>Possible performer/institution/touring relationship needing source verification.</td><td>Corridor lead</td></tr>
 </table></div></section>
 <section class="card"><h2>Source inventory snapshot</h2><div class="table-wrap"><table><tr><th>ID</th><th>File/source</th><th>City/scope</th><th>Topic</th><th>Status</th></tr>
 <tr><td>SRC_001</td><td>CMC_1 / McRae Local 533</td><td>Buffalo</td><td>Local 533 / Colored Musicians Club</td><td>Original corpus</td></tr>
@@ -102,6 +108,7 @@
 <tr><td>SRC_015</td><td>Raymond E. Jackson and Segregation in the AFM.pdf</td><td>Buffalo</td><td>Raymond Jackson, Local 533, AFM segregation, autonomy</td><td>Supplemental addition</td></tr>
 <tr><td>SRC_016</td><td>Support data_Buffalo NY</td><td>Buffalo / intercity</td><td>NYC–Buffalo–Pittsburgh corridor support and Buffalo core hubs</td><td>Supplemental addition</td></tr>
 <tr><td>SRC_017-027</td><td>Archive.zip Buffalo newspaper / union batch</td><td>Buffalo / national labor context</td><td>Club Moonglow, Little Harlem, fire-code article, help-wanted labor evidence, Whitie Schmidt, AFM Local 533</td><td>04/28/2026 Buffalo batch</td></tr>
+<tr><td>SRC_028</td><td><em>Wylie Avenue Days</em> PBS/WQED transcript-derived corpus record</td><td>Pittsburgh / Hill District</td><td>Wylie Avenue, Fullerton Street, Black commercial life, jazz/nightlife, media institutions, social infrastructure, segregation, urban renewal, displacement</td><td>05/04/2026 Pittsburgh documentary addition</td></tr>
 </table></div></section>
 </main>
 <footer>Sanborn Research LLM Corpus POC · Phase 0 technical prototype with Phase 2 corpus support · Python/counts first, LLM interpretation second, human verification always.</footer>
@@ -110,65 +117,51 @@ const entityCounts=[
 {name:'Club Moonglow',type:'Jazz club / venue',count:8,sources:'SRC_017, 018, 019, 020, 021, 022, 025, 026'},
 {name:'Local 533',type:'Labor / cultural institution',count:7,sources:'SRC_001, 004, 005, 007, 008, 015, 023'},
 {name:'Colored Musicians Club',type:'Cultural institution',count:6,sources:'SRC_001, 004, 006, 014, 015, 016'},
+{name:'Wylie Avenue / Fullerton Street',type:'Pittsburgh corridor / crossroads',count:6,sources:'SRC_002, 028'},
+{name:'Crawford Grill',type:'Pittsburgh jazz club / hub',count:4,sources:'SRC_002, 028'},
+{name:'Pittsburgh Courier',type:'Newspaper / media institution',count:3,sources:'SRC_002, 028'},
+{name:'Goode\'s Pharmacy',type:'Social infrastructure / pharmacy',count:2,sources:'SRC_028'},
+{name:'Saint Benedict the Moor / Freedom Corner',type:'Church / civic-governance node',count:2,sources:'SRC_028'},
 {name:'Memorial Auditorium',type:'Major venue',count:4,sources:'SRC_010, 013, 016, 025'},
 {name:'Little Harlem',type:'Jazz club / venue',count:2,sources:'SRC_018, 024'},
-{name:'Club Merry-Land',type:'Jazz club / venue',count:2,sources:'SRC_017, 018'},
-{name:'Brogan\'s Grill',type:'Jazz club / venue',count:2,sources:'SRC_017, 018'},
-{name:'Whitie Schmidt\'s / Schmidt\'s',type:'Jazz club / venue',count:2,sources:'SRC_017, 027'},
-{name:'Raymond E. Jackson',type:'Person / labor leader',count:2,sources:'SRC_004, 015'},
 {name:'American Federation of Musicians',type:'Labor institution',count:3,sources:'SRC_003, 015, 023'},
-{name:'145 Broadway',type:'Institutional place',count:2,sources:'SRC_015, 016'},
 {name:'Michigan at William / 460 Michigan',type:'Address / micro-corridor',count:5,sources:'SRC_018, 019, 020, 021, 022'}
 ];
 const institutionCounts=[
-{category:'Jazz clubs / nightlife venues',count:21,examples:'Club Moonglow; Little Harlem; Whitie Schmidt\'s; Club Merry-Land; Havana Casino; Brogan\'s; Federal Gardens; McVan\'s; Paradise Lounge; Copa Casino'},
-{category:'Cultural institutions / social infrastructure',count:5,examples:'Colored Musicians Club; Local 533; Local 43; Michigan Avenue Baptist Church; AFM'},
+{category:'Jazz clubs / nightlife venues',count:24,examples:'Club Moonglow; Little Harlem; Crawford Grill; Whitie Schmidt\'s; Club Merry-Land; Havana Casino; Brogan\'s; Federal Gardens; McVan\'s; Paradise Lounge; Copa Casino'},
+{category:'Cultural institutions / social infrastructure',count:12,examples:'Colored Musicians Club; Local 533; Local 43; Goode\'s Pharmacy; Loendi Club; The Frogs; churches; beauty schools; barbershops'},
 {category:'Major performance venues / auditoriums',count:4,examples:'Memorial Auditorium; Kleinhans Music Hall; Genesee Ballroom; New Granada Theater'},
-{category:'Corridors / address clusters',count:5,examples:'Michigan Street; Michigan at William; NYC→Buffalo→Pittsburgh; Wylie Avenue; Fullerton Street'},
+{category:'Corridors / address clusters',count:7,examples:'Michigan Street; Michigan at William; NYC→Buffalo→Pittsburgh; Wylie Avenue; Fullerton Street; Freedom Corner; Lower Hill'},
 {category:'Labor / governance institutions',count:4,examples:'Local 533; Local 43; American Federation of Musicians; International Musician'},
-{category:'Pittsburgh jazz/cultural nodes',count:8,examples:'Crawford Grill; Wylie Avenue; Fullerton Street; New Granada Theater; Loendi Club; Hurricane Bar; Bambola Social Club; Savoy Ballroom'}
+{category:'Media / documentation nodes',count:4,examples:'Pittsburgh Courier; Mary Dee radio; Teenie Harris; Johnson Studios'},
+{category:'Displacement / urban renewal zones',count:2,examples:'Civic Arena site; Lower Hill redevelopment impact zone'}
 ];
 const peopleCounts=[
 {name:'Raymond E. Jackson',role:'Union leader / musician / Local 533 leader',count:2,sources:'SRC_004, SRC_015',note:'Key Buffalo labor/governance figure; Local 533 and AFM segregation/autonomy evidence.'},
 {name:'L. V. Plummer',role:'Union delegate / Local 533 representative',count:1,sources:'SRC_023',note:'Named in International Musician / AFM autonomy context.'},
-{name:'James C. Petrillo',role:'AFM president / union governance actor',count:1,sources:'SRC_003, SRC_015',note:'National AFM leadership context.'},
 {name:'Max Levy',role:'Venue owner/operator',count:1,sources:'SRC_025',note:'Former owner of Club Moonglow; ownership and continuity evidence.'},
 {name:'Bill “Bojangles” Robinson',role:'Performer / dancer',count:1,sources:'SRC_025',note:'Performer-import / intercity performance signal tied to Max Levy article.'},
 {name:'Irving Alexander',role:'Performer / revue figure',count:2,sources:'SRC_020, SRC_026',note:'Repeated Club Moonglow revue mention.'},
 {name:'Heads Adams',role:'Musician / orchestra leader',count:2,sources:'SRC_020, SRC_021',note:'Club Moonglow orchestra evidence.'},
 {name:'Le Roy Smith',role:'Venue operator / club figure',count:1,sources:'SRC_024',note:'Named with Little Harlem at 494 Michigan.'},
-{name:'Bobby Marshall',role:'Performer / amateur-night figure',count:1,sources:'SRC_019',note:'Club Moonglow amateur-night source.'},
-{name:'Eddie Bourne',role:'Performer / music figure',count:1,sources:'SRC_019',note:'Club Moonglow amateur-night source.'},
-{name:'Toy Titus',role:'Performer / revue figure',count:1,sources:'SRC_021',note:'Club Moonglow Running Wild Revue.'},
-{name:'Princess Tyeena',role:'Performer / revue figure',count:1,sources:'SRC_021',note:'Club Moonglow Running Wild Revue.'},
-{name:'Annabelle / Anna Belle',role:'Performer / revue figure',count:2,sources:'SRC_021, SRC_026',note:'Appears in Moonglow revue ads; spelling should be normalized during verification.'},
-{name:'Stream-Lined Sue',role:'Performer / revue figure',count:1,sources:'SRC_021',note:'Club Moonglow Running Wild Revue.'},
-{name:'Clara Williams',role:'Performer / revue figure',count:2,sources:'SRC_021, SRC_026',note:'Repeated Club Moonglow performer mention.'},
-{name:'Rhythm Brown',role:'Performer / revue figure',count:1,sources:'SRC_020',note:'Club Moonglow Gala Stage Revue.'},
-{name:'Ted Lewis Jr.',role:'Performer / revue figure',count:1,sources:'SRC_026',note:'Club Moonglow Sepian Girl advertisement.'},
-{name:'Inez Carter',role:'Performer / revue figure',count:1,sources:'SRC_026',note:'Club Moonglow Sepian Girl advertisement.'},
-{name:'Les Hite',role:'Musician / bandleader',count:1,sources:'SRC_009',note:'Genesee Ballroom event listing.'},
-{name:'Britt Woodman',role:'Musician / side personnel',count:1,sources:'SRC_009',note:'Genesee Ballroom event listing.'},
-{name:'Louis Jordan',role:'Musician / bandleader',count:1,sources:'SRC_010',note:'Memorial Auditorium event listing.'},
-{name:'Joe Morris',role:'Musician / side personnel',count:1,sources:'SRC_010',note:'Memorial Auditorium event listing.'},
-{name:'Miles Davis',role:'Musician',count:1,sources:'SRC_011',note:'Kleinhans Music Hall / Symphony Sid all-star show listing.'},
-{name:'J. J. Johnson',role:'Musician',count:1,sources:'SRC_011',note:'Kleinhans Music Hall / Symphony Sid all-star show listing.'},
-{name:'Zoot Sims',role:'Musician',count:1,sources:'SRC_011',note:'Kleinhans Music Hall / Symphony Sid all-star show listing.'},
-{name:'Milt Jackson',role:'Musician',count:1,sources:'SRC_011',note:'Kleinhans Music Hall / Symphony Sid all-star show listing.'},
-{name:'Kenny Clarke',role:'Musician',count:1,sources:'SRC_011',note:'Kleinhans Music Hall / Symphony Sid all-star show listing.'},
-{name:'Count Basie',role:'Musician / bandleader',count:2,sources:'SRC_013',note:'B.A.C. and Memorial Auditorium event listings.'},
-{name:'Hattie Smith',role:'Performer / named act',count:1,sources:'SRC_012',note:'Copa Casino event/source listing.'},
-{name:'Montell A. Paulson',role:'Performer / named act',count:1,sources:'SRC_012',note:'Paradise Lounge event/source listing.'},
-{name:'Alan P. Merriam',role:'Scholar / source author',count:1,sources:'SRC_014',note:'Jazz community/protest theoretical framework source.'},
-{name:'Raymond W. Mack',role:'Scholar / source author',count:1,sources:'SRC_014',note:'Jazz community/protest theoretical framework source.'},
-{name:'Lance P. Boos',role:'Scholar / source author',count:1,sources:'SRC_015',note:'Raymond Jackson / AFM segregation thesis author.'}
+{name:'Billy Eckstine',role:'Musician / singer / Pittsburgh cultural figure',count:1,sources:'SRC_028',note:'Wylie Avenue Days / Hill District cultural memory source.'},
+{name:'Mary Lou Williams',role:'Musician / composer',count:1,sources:'SRC_028',note:'Pittsburgh jazz legacy figure.'},
+{name:'Erroll Garner',role:'Musician / pianist',count:1,sources:'SRC_028',note:'Pittsburgh jazz legacy figure.'},
+{name:'Ahmad Jamal',role:'Musician / pianist',count:1,sources:'SRC_028',note:'Pittsburgh jazz legacy figure.'},
+{name:'George Benson',role:'Musician / guitarist',count:1,sources:'SRC_028',note:'Pittsburgh jazz legacy figure.'},
+{name:'August Wilson',role:'Playwright / Hill District cultural figure',count:1,sources:'SRC_028',note:'Hill District cultural memory and place-based narrative.'},
+{name:'Robert L. Vann',role:'Publisher / Pittsburgh Courier leader',count:1,sources:'SRC_028',note:'Media institution and national Black information network.'},
+{name:'Teenie Harris',role:'Photographer / visual documentarian',count:1,sources:'SRC_028',note:'Media/documentation node for Hill District archive.'},
+{name:'Gus Greenlee',role:'Business owner / sports and nightlife figure',count:1,sources:'SRC_028',note:'Greenlee Field, Negro League, informal economy/civic investment context.'},
+{name:'Woogie Harris',role:'Business/informal economy figure',count:1,sources:'SRC_028',note:'Crystal Barber Shop, numbers economy, social-infrastructure context.'},
+{name:'Mary Dee',role:'Radio / media figure',count:1,sources:'SRC_028',note:'Broadcast/media and community information context.'},
+{name:'Martin Luther King Jr.',role:'Civil-rights leader',count:1,sources:'SRC_028',note:'Civil-rights / church/governance context.'},
+{name:'Count Basie',role:'Musician / bandleader',count:2,sources:'SRC_013, SRC_028',note:'Appears in performance/event and Wylie Avenue Days cultural circuit evidence.'}
 ];
-function esc(v){return String(v??'').replace(/[&<>]/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));}
-function makeBar(count,max){const pct=Math.max(4,Math.round((count/max)*100));return `<div class="bar"><span style="width:${pct}%"></span></div>`;}
-function entityTable(){const max=Math.max(...entityCounts.map(r=>r.count));document.getElementById('entityCounts').innerHTML='<tr><th>Name / entity</th><th>Type</th><th>Count</th><th>Signal</th><th>Sources</th></tr>'+entityCounts.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.type)}</td><td><span class="count">${r.count}</span></td><td>${makeBar(r.count,max)}</td><td class="mini">${esc(r.sources)}</td></tr>`).join('');}
-function institutionTable(){const max=Math.max(...institutionCounts.map(r=>r.count));document.getElementById('institutionCounts').innerHTML='<tr><th>Institution group</th><th>Distinct count</th><th>Signal</th><th>Examples</th></tr>'+institutionCounts.map(r=>`<tr><td>${esc(r.category)}</td><td><span class="count">${r.count}</span></td><td>${makeBar(r.count,max)}</td><td class="mini">${esc(r.examples)}</td></tr>`).join('');}
-function peopleTable(){const max=Math.max(...peopleCounts.map(r=>r.count));document.getElementById('peopleCounts').innerHTML='<tr><th>Person</th><th>Preliminary function</th><th>Count</th><th>Signal</th><th>Sources</th><th>Note</th></tr>'+peopleCounts.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.role)}</td><td><span class="count">${r.count}</span></td><td>${makeBar(r.count,max)}</td><td class="mini">${esc(r.sources)}</td><td class="mini">${esc(r.note)}</td></tr>`).join('');}
-entityTable();institutionTable();peopleTable();
+function renderEntityTable(id,rows){const t=document.getElementById(id);t.innerHTML='<tr><th>Name/entity</th><th>Type</th><th>Working count</th><th>Sources</th></tr>'+rows.map(r=>`<tr><td>${r.name}</td><td>${r.type}</td><td><span class="count">${r.count}</span></td><td>${r.sources}</td></tr>`).join('')}
+function renderInstitutionTable(id,rows){const t=document.getElementById(id);t.innerHTML='<tr><th>Category</th><th>Working count</th><th>Examples</th></tr>'+rows.map(r=>`<tr><td>${r.category}</td><td><span class="count">${r.count}</span></td><td>${r.examples}</td></tr>`).join('')}
+function renderPeopleTable(id,rows){const t=document.getElementById(id);t.innerHTML='<tr><th>Person</th><th>Preliminary role</th><th>Working count</th><th>Sources</th><th>Evidence note</th></tr>'+rows.map(r=>`<tr><td>${r.name}</td><td>${r.role}</td><td><span class="count">${r.count}</span></td><td>${r.sources}</td><td>${r.note}</td></tr>`).join('')}
+renderEntityTable('entityCounts',entityCounts);renderInstitutionTable('institutionCounts',institutionCounts);renderPeopleTable('peopleCounts',peopleCounts);
 </script>
 </body>
 </html>
