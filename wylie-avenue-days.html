@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wylie Avenue Days Corpus Addendum</title>
+<style>
+:root{--bg:#020617;--panel:#0f172a;--line:#334155;--muted:#94a3b8;--text:#e5e7eb;--accent:#bfdbfe;--blue:#38bdf8;--green:#86efac;--gold:#fde68a;--rose:#fecdd3}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#172554,#020617 48%,#020617);color:var(--text)}header,main,footer{max-width:1180px;margin:auto;padding:28px 22px}h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:10px 0 12px}p,li{color:var(--muted);line-height:1.55}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:12px;margin:4px 4px 4px 0}.green{color:#dcfce7;background:rgba(34,197,94,.08);border-color:#166534}.gold{color:#fef3c7;background:rgba(245,158,11,.08);border-color:#92400e}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}.card{background:rgba(15,23,42,.84);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:18px;box-shadow:0 20px 50px rgba(0,0,0,.22)}.kpi{font-size:34px;font-weight:800}.label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.note{border-left:4px solid var(--blue);padding-left:14px}.warn{border-left:4px solid var(--gold);padding-left:14px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;background:rgba(2,6,23,.45)}th,td{padding:10px 12px;border-bottom:1px solid rgba(51,65,85,.7);text-align:left;vertical-align:top;font-size:14px}th{background:#0f172a;color:var(--accent);position:sticky;top:0}a{color:#7dd3fc}.small{font-size:13px}.tag{display:inline-block;margin:4px 4px 0 0;padding:5px 10px;border:1px solid var(--line);border-radius:999px;color:#dbeafe;background:rgba(56,189,248,.08);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<span class="pill">Corpus Addendum</span><span class="pill green">Pittsburgh</span><span class="pill gold">Wylie Avenue Days</span>
+<h1>PBS <em>Wylie Avenue Days</em> Corpus Addendum</h1>
+<p class="note">This page adds the PBS/WQED documentary as a transcript-derived corpus source for the Sanborn Research LLM workflow. The public app stores structured metadata, entities, themes, and node leads rather than republishing the full copyrighted transcript.</p>
+<p><a href="./">Back to main LLM prototype</a> · <a href="https://www.pbs.org/video/wylie-avenue-days-g1u3vx/">PBS source page</a> · <a href="data/pbs_wylie_avenue_days_corpus.json">Structured JSON corpus record</a></p>
+</header>
+<main>
+<section class="grid">
+<div class="card"><div class="label">Source ID</div><div class="kpi">028</div><p>PBS/WQED documentary transcript-derived record.</p></div>
+<div class="card"><div class="label">City focus</div><div class="kpi">PGH</div><p>Hill District, Wylie Avenue, Fullerton Street, Lower Hill.</p></div>
+<div class="card"><div class="label">Runtime</div><div class="kpi">57m</div><p>Episode metadata lists a 57m 42s program runtime.</p></div>
+<div class="card"><div class="label">Use</div><div class="kpi">LLM</div><p>Entity extraction, theme bins, node leads, corridor/displacement evidence.</p></div>
+</section>
+<section class="card">
+<h2>Corpus summary</h2>
+<p>The documentary presents Wylie Avenue and the Hill District as a dense Black cultural, commercial, social, religious, nightlife, newspaper, sports, and political ecosystem. It describes the neighborhood's rise during the Great Migration, its internal institutions and businesses, the role of segregation in shaping parallel Black institutions, the importance of Wylie Avenue and Fullerton Street as a crossroads, and the later damage caused by urban renewal, Civic Arena construction, displacement, and the post-1968 decline of the lower Hill.</p>
+<p class="warn">Research use: strong source for Pittsburgh node selection and social-infrastructure coding. It should not replace address-level archival verification.</p>
+</section>
+<section class="two">
+<div class="card"><h2>Geographic signals</h2><span class="tag">Wylie Avenue</span><span class="tag">Fullerton Street</span><span class="tag">Center Avenue</span><span class="tag">Crawford Street</span><span class="tag">Bedford Avenue</span><span class="tag">Webster Avenue</span><span class="tag">Wandless Street</span><span class="tag">Herron Avenue</span><span class="tag">Fifth Avenue</span><span class="tag">Lower Hill</span><span class="tag">Upper Hill</span><span class="tag">Freedom Corner</span><span class="tag">Civic Arena site</span></div>
+<div class="card"><h2>New theme bins</h2><span class="tag">Great Migration</span><span class="tag">Black commercial corridor</span><span class="tag">Social infrastructure</span><span class="tag">Jazz and nightlife</span><span class="tag">Media/documentation</span><span class="tag">Segregation</span><span class="tag">Parallel institutions</span><span class="tag">Informal economy</span><span class="tag">Urban renewal</span><span class="tag">Displacement</span><span class="tag">Governance/resistance</span></div>
+</section>
+<section class="card">
+<h2>Priority candidate nodes</h2>
+<div class="table-wrap"><table><tr><th>Node</th><th>Type</th><th>Location signal</th><th>Model use</th></tr>
+<tr><td>Goode's Pharmacy</td><td>Pharmacy / 24-hour social hub</td><td>Corner of Fullerton and Wylie</td><td>Strong social-infrastructure and crossroads anchor.</td></tr>
+<tr><td>Crawford Grill No. 1</td><td>Jazz club / nightlife venue</td><td>Wylie/Fullerton area</td><td>Core Pittsburgh jazz hub and nightlife node.</td></tr>
+<tr><td>Crawford Grill No. 2</td><td>Jazz club / nightlife venue</td><td>Hill District</td><td>Jazz Mecca / after-hours circuit node.</td></tr>
+<tr><td>Stanley's</td><td>Bar / nightclub</td><td>Near Fullerton and Wylie</td><td>Nightlife circuit and bar-hop sequence node.</td></tr>
+<tr><td>Pittsburgh Courier</td><td>Newspaper / media institution</td><td>Near top of Wylie Avenue</td><td>Major Black newspaper and national information network.</td></tr>
+<tr><td>Loendi Club</td><td>Men's social club / cultural institution</td><td>Near Wylie and Fullerton</td><td>Elite social-club and celebrity network node.</td></tr>
+<tr><td>The Frogs</td><td>Men's social club</td><td>Hill District</td><td>Social governance, event culture, Frog Week, and intercity visitors.</td></tr>
+<tr><td>LaSalle's / Ed LaSalle's Beauty College</td><td>Beauty salon / vocational school</td><td>Hill District</td><td>Skill transmission, Black women's labor, beauty economy.</td></tr>
+<tr><td>Saint Benedict the Moor</td><td>Church / Freedom Corner anchor</td><td>Center and Crawford area</td><td>Boundary against urban renewal; protest and civic rallying point.</td></tr>
+<tr><td>Nesbitt's Pie Shop</td><td>Restaurant / Black business</td><td>Corner of Wylie and Junilla</td><td>Food economy, business success, economic base.</td></tr>
+<tr><td>McAvoy's Jeweler</td><td>Jewelry business</td><td>1411 Wylie Avenue</td><td>Black business / commercial corridor evidence.</td></tr>
+<tr><td>Owl Cab Company</td><td>Black-owned taxi company</td><td>Hill District</td><td>Business discrimination and mobility restrictions.</td></tr>
+<tr><td>Greenlee Field</td><td>Negro League ballpark</td><td>Pittsburgh</td><td>Sports/civic investment and Gus Greenlee network.</td></tr>
+<tr><td>Musicians Club</td><td>Musician hangout / club</td><td>Near former crossroads area</td><td>Jazz labor/social node.</td></tr>
+<tr><td>Rhumba Theater</td><td>Theater</td><td>Crossroads / Lower Hill area</td><td>Displacement/urban renewal loss node.</td></tr>
+</table></div>
+</section>
+<section class="card">
+<h2>GIS handoff notes</h2>
+<ul>
+<li>Prioritize geocoding the Fullerton/Wylie crossroads cluster and Crawford Street/Freedom Corner boundary.</li>
+<li>Separate local corridor nodes from intercity performer/network evidence.</li>
+<li>Treat Civic Arena/Lower Hill redevelopment as a displacement polygon or impact zone rather than a single point.</li>
+<li>Use this documentary as evidence for Pittsburgh node selection and social-infrastructure categories, not as final address verification by itself.</li>
+</ul>
+</section>
+</main>
+<footer>Sanborn Research LLM Corpus POC · Wylie Avenue Days addendum · Structured metadata, entity extraction, and human verification workflow.</footer>
+</body>
+</html>
