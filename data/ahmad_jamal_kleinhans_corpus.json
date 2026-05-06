@@ -1,0 +1,148 @@
+{
+  "source_id": "SRC_029",
+  "title": "Lesson with Ahmad Jamal (music & creativity in collaboration with Bose systems)",
+  "source_type": "YouTube video auto-transcript-derived corpus record",
+  "platform": "YouTube",
+  "speaker_primary": "Ahmad Jamal",
+  "source_url": "https://youtu.be/YWTYtUH3tV0",
+  "youtube_id": "YWTYtUH3tV0",
+  "caption_file_used": "Lesson with Ahmad Jamal (music & creativity in collaboration with Bose systems) [2013 New album] [YWTYtUH3tV0].en.srt",
+  "runtime_note": "Captioned speech runs to approximately 6:18; final stretch appears to be instrumental/music content with minimal caption text.",
+  "rights_note": "Do not republish the full YouTube transcript inside the public app. Use structured metadata, short evidence notes, extracted entities, and timestamp references for corpus indexing and human verification.",
+  "source_status": "Supplemental source; usable only with transcript-quality caveat and manual verification of the Kleinhans line.",
+  "evidence_strength": "medium-low supplemental evidence",
+  "corpus_use": "Adds a small musician-testimony source connecting Pittsburgh-born Ahmad Jamal's performance/sound preferences to an apparent mention of Kleinhans Music Hall in Buffalo. Best used as a corridor clue and acoustics/performance-infrastructure note, not as a primary historical source.",
+  "summary": "In this short video, Ahmad Jamal discusses American classical music, creative discipline, performance sound, and monitor/acoustic preferences. The core project-relevant moment occurs around 00:02:06-00:02:20, where Jamal says he does not like outdoor festivals, argues that music should be indoors/contained, and lists several halls he likes. The auto-caption reads 'Toronto climbs in Buffalo,' which is interpreted as 'Massey Hall in Toronto, Kleinhans in Buffalo' based on Umar's research note and the surrounding list of concert halls.",
+  "key_timestamp": {
+    "start": "00:02:06",
+    "end": "00:02:20",
+    "auto_caption_text": "performing I don't like outdoor festivals ... I like Carnegie Hall Massey Hall in Toronto climbs in Buffalo I like Salle Pleyel in Paris I like music to be contained",
+    "manual_interpretation": "Ahmad Jamal says he prefers indoor/contained music spaces and appears to list Carnegie Hall, Massey Hall in Toronto, Kleinhans in Buffalo, and Salle Pleyel in Paris.",
+    "correction_note": "The auto-caption phrase 'climbs in Buffalo' is treated as a likely caption error for 'Kleinhans in Buffalo.' This should remain flagged for human verification before being cited formally."
+  },
+  "geographic_signals": [
+    "Pittsburgh",
+    "Buffalo",
+    "Toronto",
+    "Paris",
+    "New York City"
+  ],
+  "candidate_nodes": [
+    {
+      "name": "Kleinhans Music Hall",
+      "city": "Buffalo",
+      "type": "concert hall / acoustic performance venue",
+      "location_signal": "auto-caption likely reads 'Kleinhans in Buffalo' at approx. 00:02:13-00:02:17",
+      "model_use": "Supplemental Buffalo venue-acoustics node and Pittsburgh-to-Buffalo corridor clue.",
+      "verification_status": "needs human verification from audio/timestamp"
+    },
+    {
+      "name": "Carnegie Hall",
+      "city": "New York City",
+      "type": "concert hall",
+      "location_signal": "listed by Jamal among preferred indoor halls",
+      "model_use": "Context for elite acoustic venue comparison; not a local project node.",
+      "verification_status": "auto-caption visible"
+    },
+    {
+      "name": "Massey Hall",
+      "city": "Toronto",
+      "type": "concert hall",
+      "location_signal": "listed by Jamal before the Buffalo/Kleinhans phrase",
+      "model_use": "Context for intercity performance-space comparison.",
+      "verification_status": "auto-caption visible"
+    },
+    {
+      "name": "Salle Pleyel",
+      "city": "Paris",
+      "type": "concert hall",
+      "location_signal": "listed by Jamal after the Buffalo/Kleinhans phrase",
+      "model_use": "Context for international acoustic venue comparison.",
+      "verification_status": "auto-caption visible"
+    }
+  ],
+  "people_entities": [
+    "Ahmad Jamal",
+    "Louis Armstrong",
+    "Ella Fitzgerald",
+    "Duke Ellington",
+    "Art Blakey",
+    "Sidney Bechet",
+    "Bach",
+    "Beethoven",
+    "Ravel",
+    "Debussy"
+  ],
+  "institution_entities": [
+    "Kleinhans Music Hall",
+    "Carnegie Hall",
+    "Massey Hall",
+    "Salle Pleyel"
+  ],
+  "theme_bins": [
+    {
+      "theme": "Musician testimony",
+      "signals": [
+        "first-person performance preference",
+        "venue list",
+        "sound/acoustics judgment"
+      ]
+    },
+    {
+      "theme": "Acoustic performance infrastructure",
+      "signals": [
+        "indoor music",
+        "contained sound",
+        "concert halls",
+        "monitor/sound system discussion"
+      ]
+    },
+    {
+      "theme": "Pittsburgh-to-Buffalo corridor clue",
+      "signals": [
+        "Ahmad Jamal",
+        "Kleinhans Music Hall",
+        "Buffalo",
+        "performance venue memory"
+      ]
+    },
+    {
+      "theme": "American classical music framing",
+      "signals": [
+        "American classical music",
+        "jazz terminology",
+        "Duke Ellington",
+        "Art Blakey",
+        "Sidney Bechet"
+      ]
+    },
+    {
+      "theme": "Indoor vs outdoor performance",
+      "signals": [
+        "outdoor festivals",
+        "inside not outside",
+        "contained music",
+        "sound preference"
+      ]
+    }
+  ],
+  "recommended_schema_updates": [
+    "video_transcript_source",
+    "musician_testimony_indicator",
+    "venue_acoustics_indicator",
+    "performance_circuit_indicator",
+    "manual_transcript_correction_note",
+    "timestamp_verification_status"
+  ],
+  "llm_indexing_notes": [
+    "Index this as a supplemental source only.",
+    "Do not allow this source to outweigh stronger archival/documentary sources such as Wylie Avenue Days, CMC records, union evidence, newspapers, or Sanborn/address evidence.",
+    "Use this source to flag Kleinhans Music Hall as a Buffalo performance-space/acoustics node connected to Ahmad Jamal's performance memory.",
+    "Keep 'climbs in Buffalo'/'Kleinhans in Buffalo' as a correction note until manually verified against the audio."
+  ],
+  "gis_handoff_notes": [
+    "No new address geocoding should be derived from this source alone.",
+    "If Kleinhans Music Hall is already in the Buffalo node layer, this source can be attached as supplemental evidence under venue-acoustics/performance-memory fields.",
+    "Do not treat this as proof of a formal booking route; treat it as qualitative musician testimony supporting corridor plausibility."
+  ]
+}
